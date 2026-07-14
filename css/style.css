@@ -1,13 +1,13 @@
 /* ==========================================================
-   King Nerd Software Legal Center
+   KingNerd Legal Center
    Modern Responsive Light Theme
    ========================================================== */
 
 :root {
 
-    --bg: #f4f7fb;
-    --card: #ffffff;
-    --card-hover: #f8fbff;
+    --bg: #e7ecf2;
+    --card: #f8fafc;
+    --card-hover: #f3f7fb;
 
     --primary: #3b82f6;
     --primary-hover: #2563eb;
@@ -155,11 +155,7 @@ nav a[aria-current="page"] {
 }
 
 .card:hover {
-
-    transform: translateY(-3px);
-
     background: var(--card-hover);
-
 }
 
 .hero {
