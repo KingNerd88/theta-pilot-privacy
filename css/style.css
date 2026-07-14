@@ -1,23 +1,23 @@
 /* ==========================================================
-   King Nerd Software Legal Center
-   Modern Responsive Light Theme
+   KingNerd Legal Center
+   Modern Responsive Dark Theme
    ========================================================== */
 
 :root {
 
-    --bg: #f4f7fb;
-    --card: #ffffff;
-    --card-hover: #f8fbff;
+    --bg: #0f1117;
+    --card: #1b1d24;
+    --card-hover: #242733;
 
     --primary: #3b82f6;
-    --primary-hover: #2563eb;
+    --primary-hover: #60a5fa;
 
-    --text: #172033;
-    --secondary: #52657d;
+    --text: #f3f4f6;
+    --secondary: #b8bcc6;
 
-    --border: #d8e4f1;
+    --border: #2b2f3a;
 
-    --shadow: rgba(30, 64, 110, .10);
+    --shadow: rgba(0, 0, 0, .35);
 
     --radius: 16px;
 
@@ -69,6 +69,18 @@ body {
 
 /* ========================================================== */
 
+.site-header {
+    margin-bottom: 20px;
+}
+
+.site-header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ========================================================== */
+
 nav {
 
     display: flex;
@@ -115,23 +127,6 @@ nav a:hover {
 
     color: white;
 
-}
-
-nav .brand-logo {
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-
-nav .brand-logo:hover {
-    background: transparent;
-}
-
-.brand-logo img {
-    display: block;
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
 }
 
 nav a[aria-current="page"] {
@@ -188,7 +183,7 @@ nav a[aria-current="page"] {
 
 .app-card {
     padding: 20px;
-    background: #f5f9ff;
+    background: rgba(255, 255, 255, .03);
     border: 1px solid var(--border);
     border-radius: 12px;
 }
@@ -205,7 +200,7 @@ h1 {
 
     margin-bottom: 20px;
 
-    color: #102a43;
+    color: white;
 
 }
 
@@ -269,7 +264,7 @@ a:hover {
 
 strong {
 
-    color: #102a43;
+    color: white;
 
 }
 
@@ -295,7 +290,7 @@ footer {
 
 code {
 
-    background: #e8f0fa;
+    background: #2d2f36;
 
     padding: 3px 8px;
 
@@ -339,7 +334,7 @@ td {
 
 tr:hover {
 
-    background: #f3f8ff;
+    background: rgba(255, 255, 255, .03);
 
 }
 
@@ -405,17 +400,49 @@ hr {
 
 /* ========================================================== */
 
-@media (max-width:900px){
+@media (max-width:900px) {
 
-    body{
+    body {
 
-        padding:20px;
+        padding: 20px;
 
     }
 
-    nav{
+    nav {
 
-        justify-content:flex-start;
+        justify-content: flex-start;
+
+    }
+
+}
+
+/* ========================================================== */
+
+@media (max-width:600px) {
+
+    h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .card {
+
+        padding: 20px;
+
+    }
+
+    nav {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    nav a {
+
+        text-align: center;
 
     }
 
@@ -423,78 +450,34 @@ hr {
 
 /* ========================================================== */
 
-@media (max-width:600px){
+::selection {
 
-    h1{
+    background: var(--primary);
 
-        font-size:2rem;
-
-    }
-
-    .card{
-
-        padding:20px;
-
-    }
-
-    nav{
-
-        flex-direction:column;
-
-        align-items:stretch;
-
-    }
-
-    nav a{
-
-        text-align:center;
-
-    }
-
-    nav .brand-logo {
-        align-self: center;
-    }
+    color: white;
 
 }
 
 /* ========================================================== */
 
-::selection{
+::-webkit-scrollbar {
 
-    background:var(--primary);
-
-    color:white;
+    width: 10px;
 
 }
 
-/* ========================================================== */
+::-webkit-scrollbar-thumb {
 
-::-webkit-scrollbar{
+    background: #3b82f6;
 
-    width:10px;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#3b82f6;
-
-    border-radius:20px;
+    border-radius: 20px;
 
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
 
-    background:#eaf1f8;
+    background: #171922;
 
-}
-
-.contact-logo {
-    display: block;
-    width: min(190px, 100%);
-    height: auto;
-    margin: 24px auto 0;
-    border-radius: 12px;
 }
 
 /* ========================================================== */
