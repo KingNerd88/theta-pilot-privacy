@@ -270,7 +270,7 @@ footer {
 
     margin-top: 60px;
 
-    padding-top: 30px;
+    padding: 30px 24px 8px;
 
     border-top: 1px solid var(--border);
 
@@ -280,6 +280,74 @@ footer {
 
     font-size: .9rem;
 
+}
+
+footer p {
+    margin-bottom: 12px;
+}
+
+.footer-brand {
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 22px;
+    margin-bottom: 16px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.footer-nav a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 6px;
+    border-radius: 8px;
+    transition: .25s;
+}
+
+.footer-nav a:hover {
+    color: var(--primary-hover);
+    background: none;
+}
+
+.footer-legal {
+    font-size: .85rem;
+    margin-bottom: 0;
+}
+
+/* ---- Document meta (effective / updated dates) ---- */
+
+.doc-meta {
+    display: inline-block;
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    background: #e8f0fa;
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+.contact-logo {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 8px 0 4px;
+    border-radius: 16px;
+}
+
+.lead {
+    font-size: 1.08rem;
 }
 
 /* ========================================================== */
